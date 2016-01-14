@@ -4,11 +4,13 @@
 difflib é um módulo python usado para comparar sequências.
 O uso mais comum desse módulo é para comparar arquivos e
 mostrar a diferença entre eles, mas é possível fazer
-muito mais do que isso.
+muito mais do que isso.**
 
-* [Encontrando palavras parecidas](#finding_close_words)
+**Tabela de conteúdos**
 
-## Encontrando palavras parecidas <a name="finding_close_words"></a>
+1. [Encontrando palavras parecidas](#finding_close_words)
+
+#### Encontrando palavras parecidas <a name="finding_close_words"></a>
 
 Se quisermos encontrar em uma lista de palavras, quais delas são as mais próximas de uma palavra específica usamos:
 
@@ -19,7 +21,8 @@ Se quisermos encontrar em uma lista de palavras, quais delas são as mais próxi
     >>> ["lista", "lst", "lit"]
 
 Por padrão `get_close_matches` retorna uma lista com 3 palavras mais próximas, podemos definir a quantidade de palavras que queremos passando o argumento `n`
-
+    
+    >>> import difflib
     >>> difflib.get_close_matches(palavra, possibilidades, n=1)
     >>> ["lista"]
 
