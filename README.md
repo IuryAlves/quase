@@ -96,7 +96,7 @@ O método `get_opcodes` retorna uma lista de tuplas, sendo que cada tupla indica
 Vamos criar uma função com instruções mais claras sobre como tranformar uma palavra em outra usando o método `get_opcodes`
 
 ```python
-def transformar_uma_palavra_em_outra(palavra_a, palavra_b):
+def como_transformar_uma_palavra_em_outra(palavra_a, palavra_b):
     sequence_matcher = SequenceMatcher(a=palavra_a, b=palavra_b)
     print ("Palavra a: %s\nPalavra b: %s\n" % (palavra_a, palavra_b))
     for tag, i_a, j_a, i_b, j_b in sequence_matcher.get_opcodes():
